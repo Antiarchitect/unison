@@ -8,10 +8,10 @@ cache:
   - /usr/local
 
 env:
-  # - OCAML_VERSION=4.01
+  - OCAML_VERSION=4.01
+  # This will actually run against the latest OCaml, despite appearances
+  # (see travis-ocaml.sh)
   - OCAML_VERSION=4.02
-  - OCAML_VERSION=4.05
-  - OCAML_VERSION=4.06
 
 os:
   - linux

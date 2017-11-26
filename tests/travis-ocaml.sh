@@ -98,6 +98,8 @@ install_on_osx () {
     4.01,1.2.2) OPAM_SWITCH=4.01.0; brew install opam ;;
     4.02,1.2.2) brew install ocaml; brew install opam ;;
     4.02,1.3.0) brew install ocaml; brew install opam --HEAD ;;
+    # BCP: Looks like this actually installs the latest OCaml, rather
+    # than OCaml 4.03 -- i.e., it's probably using 4.05 or later...
     4.03,1.2.2) brew install ocaml --HEAD; brew install opam ;;
     *) echo "Unknown OCAML_VERSION=$OCAML_VERSION OPAM_VERSION=$OPAM_VERSION"
        exit 1 ;;
