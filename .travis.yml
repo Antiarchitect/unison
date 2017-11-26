@@ -8,10 +8,12 @@ cache:
   - /usr/local
 
 env:
-  - OCAML_VERSION=4.01
+  # Unison no longer builds on 4.01 (because of the -unsafe-string flag)
+  # - OCAML_VERSION=4.01
+  # 4.02 is the oldest version that is known to work
+  - OCAML_VERSION=4.02
   # This will actually run against the latest OCaml, despite appearances
   # (see travis-ocaml.sh)
-  - OCAML_VERSION=4.02
   - OCAML_VERSION=4.03
 
 os:
